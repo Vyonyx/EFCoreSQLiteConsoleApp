@@ -5,8 +5,8 @@ namespace EFGettingStartedConsole.Context;
 
 public class BlogContext : DbContext
 {
-    public DbSet<Blog> Blogs { get; set; }
-    public DbSet<Post> Posts { get; set; }
+    public DbSet<Blog> Blogs => Set<Blog>();
+    public DbSet<Post> Posts => Set<Post>();
 
     public string DbPath { get; set; }
 
