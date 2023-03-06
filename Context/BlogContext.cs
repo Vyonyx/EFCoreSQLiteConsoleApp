@@ -15,9 +15,6 @@ public class BlogContext : DbContext
         var folder = Environment.SpecialFolder.LocalApplicationData;
         var path = Environment.GetFolderPath(folder);
         DbPath = System.IO.Path.Join(path, "blogging.db");
-
-        Blogs = Set<Blog>();
-        Posts = Set<Post>();
     }
 
     // The following configures EF to create a Sqlite database file in the
